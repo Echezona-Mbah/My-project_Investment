@@ -1,0 +1,70 @@
+.wrap
+{
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	position:fixed;
+	z-index:10001;
+	background:  rgba(0, 73, 101, 0.35);
+	-webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.modal_block
+{
+	width:auto;
+	min-width:100px;
+	position: absolute;
+	left:50%;
+	margin-left:-250px; 
+	
+	height: 100%;
+	z-index:10002;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	min-height:100px;
+	display:block;
+	border-top:none;
+	
+}
+.modal_block>.inset
+{
+	padding:30px 45px;
+	z-index:3;
+	box-shadow:inset 0 0 ;
+	background: url('../images/bg-left-modal.png') left top repeat-y, url('../images/bg-content.png');
+	background-size: auto auto;
+	margin:0;
+	box-shadow:inset 0 0 30px rgba(0,0,0,0.1);
+}
+.modal_block .close
+{
+	position: absolute;
+    cursor: pointer;
+    left: -50px;
+    top: 0px;
+    opacity: 1;
+    position: absolute;
+    outline: 0;
+    
+    width: 50px;
+    background: url('../images/close.png') center center no-repeat, #33c3c9;
+    background-size: auto 50%;
+    height: 50px;
+    text-align: right;
+    z-index: 9999;
+      -webkit-transition:all .4s ease-in-out;
+    -moz-transition:all .4s ease-in-out;
+    -ms-transition:all .4s ease-in-out;
+    -o-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out;
+}
+.modal_block .close:hover
+{
+	background: url('../images/close1.png') center center no-repeat, #259ca1;
+    background-size: auto 50%;
+}
